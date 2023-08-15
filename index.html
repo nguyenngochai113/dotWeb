@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion Ecommerce Website</title>
+    <!-- stylesheet -->
+    <link rel="shortcut icon" href="images/assets/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/import-style.css">
+    <!-- Box-Icon  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- carousel  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <!-- carousel  -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- slick  -->
+    <link href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.css" rel="stylesheet">
+</head>
+<body>
+    <div id="page" class="site">
+        <header class="header" data-header>
+            <div class="header-top">
+                <div class="container">
+                    <div class="row d-flex">
+                        <div class="col-lg-6">
+                            <div class="header-contact">
+                                <ul class="contact-section d-flex"> 
+                                    <li><a href="#" class="mail"></a><i class='bx bxs-envelope' ></i>Email: ngochai5750@gmail.com</li>
+                                    <li><a href="#" class="phone"></a><i class='bx bxs-phone'></i>Phone: 079.89.99.139</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="navUser">
+                                <ul class="navUser-section d-flex">
+                                    <li class="currency-option option">
+                                        <a href="#" class="currency-menu"></a>USD<i class='bx bx-chevron-down'></i>
+                                        <ul class="currency-dropdown">
+                                            <li class="currency-GBP active"><a href="#"></a>gbp</li>
+                                            <li class="currency-BDT"><a href="#"></a>bdt</li>
+                                            <li class="currency-EUR"><a href="#"></a>eur</li>
+                                        </ul>
+                                    </li>
+                                    <li class="langs-option option">
+                                        <a href="#" class="language-menu"></a>english<i class='bx bx-chevron-down'></i>
+                                        <ul class="langs-dropdown">
+                                            <li class="langs-france"><a href="#"></a>france</li>
+                                            <li class="langs-germany"><a href="#"></a>germany</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-main">
+                <div class="container">
+                    <div class="wrap d-flex">
+                        <a href="#" class="menu-trigger" id="toggle-menu"><i class='bx bx-menu'></i></a>
+                        <div class="logo"><a href="">haSu shops</a></div>
+                        <div class="header-nav">
+                            <ul class="navlist d-flex">
+                                <li><a href="#" id="active">home</a></li>
+                                <li><a href="#">shop</a><span class="sale-lable">sale</span></li>
+                                <li><a href="#">pages</a></li>
+                                <li><a href="#">sale</a></li>
+                                <li><a href="#">buy theme!</a></li>
+                                <li class="blogs-sub-menu">
+                                    <a href="#" class="d-flex">blogs<i class='bx bx-chevron-down'></i></a>
+                                    <ul class="submenu">
+                                        <li><a href="#">Latest</a></li>
+                                        <li><a href="#">Jumper</a></li>
+                                        <li><a href="#">Latest</a></li>
+                                        <li><a href="#">Jumper</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="icon">
+                            <ul class="d-flex">
+                                <li><a href="#"><i class='bx bx-search' id="search-toggle"></i></a></li>   
+                                <li><a href="#"><i class='bx bx-user'></i></a></li>
+                                <li><a href="#"><i class='bx bx-heart'></i><span class="qty">0</span></a></li>
+                                <li><a href="#"><i class='bx bx-cart'></i><span class="qty">0</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- search-modal  -->
+            <div class="search-modal">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="search-head d-flex">
+                            <strong>Search Everything</strong>
+                            <a href="#0" class="close-trigger" id="delete-toggle"><i class='bx bx-x'></i></a>
+                        </div>
+                        <form action="" class="search d-flex">
+                            <input type="text" placeholder="Search For Product">
+                            <i class='bx bx-search'></i>
+                        </form>
+                        <div class="search-footer">
+                            <p>
+                                <span>Popular search:</span>
+                                <a href="">T-shirt</a>
+                                <a href="">Glasses</a>
+                                <a href="">Crafts</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modol-background -->
+            <div class="modal-bg">
+            </div>
+        </header>
+        <main>
+            <div class="hero">
+                <div class="container">
+                    <div class="wrap object-cover">
+                        <div class="list big">
+                            <a href="#">
+                                <div class="image">
+                                    <img src="./images/assets/hero_01.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="btn-light">shop now</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list">
+                            <a href="#">
+                                <div class="image">
+                                    <img src="./images/assets/hero_02.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="btn-light">shop now</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list">
+                            <a href="#">
+                                <div class="image">
+                                    <img src="./images/assets/hero_03.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="btn-light">shop now</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list">
+                            <a href="#">
+                                <div class="image">
+                                    <img src="./images/assets/hero_05.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="btn-light">shop now</div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="list">
+                            <a href="#">
+                                <div class="image">
+                                    <img src="./images/assets/hero_04.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="btn-light">shop now</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- carousel Arrivals -->
+            <div class="arrivals">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="heading">
+                            <div class="title">New arrivals</div>
+                        </div>
+                        <div class="tabs-box">
+                            <div class="wrapper">
+                                <div class="slide">
+                                    <div class="product object-cover owl-carousel">
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <span class="lable">25% off</span>
+                                                <div class="thumbnail">
+                                                    <a href="#0">
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_01.jpg" alt="">
+                                                        </div>
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_01b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <div>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Office Shirt KM2</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$555.00</span>
+                                                        <span class="current">$458.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <div class="thumbnail">
+                                                    <a href="#">
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_02.jpg" alt="">
+                                                        </div>
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_02b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <div>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Burberry Jacket</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$379.00</span>
+                                                        <span class="current">$199.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <span class="lable">15% off</span>
+                                                <div class="thumbnail">
+                                                    <a href="#">
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_03.jpg" alt="">
+                                                        </div>
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_03b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <div>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Brown Yoox Boots</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$448.00</span>
+                                                        <span class="current">$316.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <div class="thumbnail">
+                                                    <a href="#">
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_04.jpg" alt="">
+                                                        </div>
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_04b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <div>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Honey Grail Hydrating Face Oil</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$339.00</span>
+                                                        <span class="current">$228.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <div class="thumbnail">
+                                                    <a href="#">
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_05.jpg" alt="">
+                                                        </div>
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_05b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <div>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Honey Grail Hydrating Face Oil</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$339.00</span>
+                                                        <span class="current">$228.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <span class="lable">25% off</span>
+                                                <div class="thumbnail">
+                                                    <a href="#">
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_06.jpg" alt="">
+                                                        </div>
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_06b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <div>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Office Shirt KM2</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$555.00</span>
+                                                        <span class="current">$458.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- bycats -->
+            <div class="bycart">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="heading sort-list tabs">
+                            <span class="grey-color">in</span>
+                            <div class="wrap">
+                                <h3 class="opt-trigger">
+                                    <span class="value">sweater</span>
+                                    <i class='bx bx-chevron-down'></i>
+                                </h3>
+                                <ul>
+                                    <li class="active"><a data-id='sweater' href="#0" class="tabbed-trigger">sweater</a></li>
+                                    <li><a data-id='hoodie' href="#0" class="tabbed-trigger">hoodie</a></li>
+                                    <li><a data-id='shirt' href="#0" class="tabbed-trigger">shirt</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="tabbed">
+                            <div id="sweater" class="sort-data active">
+                                <div class="sweater-section">
+                                    <div class="product">
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <span class="lable">25% off</span>
+                                                <div class="thumbnail">
+                                                    <a href="#0">
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_01.jpg" alt="">
+                                                        </div>
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_01b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                               <div class="icons-act">
+                                                    <div>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </div>
+                                               </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Office Shirt KM2</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$555.00</span>
+                                                        <span class="current">$458.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <div class="thumbnail">
+                                                    <a href="#">
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_08.jpg" alt="">
+                                                        </div>
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_08b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <div>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Burberry Jacket</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$379.00</span>
+                                                        <span class="current">$199.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <div class="thumbnail">
+                                                    <a href="#">
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_02.jpg" alt="">
+                                                        </div>
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_02b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <div>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Burberry Jacket</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$379.00</span>
+                                                        <span class="current">$199.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <span class="lable">15% off</span>
+                                                <div class="thumbnail">
+                                                    <a href="#">
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_03.jpg" alt="">
+                                                        </div>
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_03b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <div>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Brown Yoox Boots</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$448.00</span>
+                                                        <span class="current">$316.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <span class="lable">15% off</span>
+                                                <div class="thumbnail">
+                                                    <a href="#">
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_07.jpg" alt="">
+                                                        </div>
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_07b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <div>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Brown Yoox Boots</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$448.00</span>
+                                                        <span class="current">$316.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <div class="thumbnail">
+                                                    <a href="#">
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_04.jpg" alt="">
+                                                        </div>
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_04b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <div>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Honey Grail Hydrating Face Oil</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$339.00</span>
+                                                        <span class="current">$228.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <span class="lable">15% off</span>
+                                                <div class="thumbnail">
+                                                    <a href="#">
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_03.jpg" alt="">
+                                                        </div>
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_03b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <div>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Brown Yoox Boots</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$448.00</span>
+                                                        <span class="current">$316.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <span class="lable">15% off</span>
+                                                <div class="thumbnail">
+                                                    <a href="#">
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_03.jpg" alt="">
+                                                        </div>
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_03b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <ul>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Brown Yoox Boots</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$448.00</span>
+                                                        <span class="current">$316.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="hoodie" class="sort-data">
+                                <div class="sweater-section">
+                                    <div class="product">
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <span class="lable">25% off</span>
+                                                <div class="thumbnail">
+                                                    <a href="#0">
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_01.jpg" alt="">
+                                                        </div>
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_01b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <div>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Office Shirt KM2</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$555.00</span>
+                                                        <span class="current">$458.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <div class="thumbnail">
+                                                    <a href="#">
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_08.jpg" alt="">
+                                                        </div>
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_08b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <div>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Burberry Jacket</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$379.00</span>
+                                                        <span class="current">$199.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <div class="thumbnail">
+                                                    <a href="#">
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_02.jpg" alt="">
+                                                        </div>
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_02b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <div>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Burberry Jacket</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$379.00</span>
+                                                        <span class="current">$199.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <span class="lable">15% off</span>
+                                                <div class="thumbnail">
+                                                    <a href="#">
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_03.jpg" alt="">
+                                                        </div>
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_03b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <div>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </div>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Brown Yoox Boots</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$448.00</span>
+                                                        <span class="current">$316.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="shirt" class="sort-data">
+                                <div class="sweater-section">
+                                    <div class="product">
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <span class="lable">25% off</span>
+                                                <div class="thumbnail">
+                                                    <a href="#0">
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_01.jpg" alt="">
+                                                        </div>
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_01b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <ul>
+                                                        <li><a href="#0"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#0"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#0"><i class='bx bx-cart'></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Office Shirt KM2</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$555.00</span>
+                                                        <span class="current">$458.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <div class="thumbnail">
+                                                    <a href="#">
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_08.jpg" alt="">
+                                                        </div>
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_08b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <ul>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Burberry Jacket</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$379.00</span>
+                                                        <span class="current">$199.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <div class="thumbnail">
+                                                    <a href="#">
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_02.jpg" alt="">
+                                                        </div>
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_02b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <ul>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Burberry Jacket</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$379.00</span>
+                                                        <span class="current">$199.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <span class="lable">15% off</span>
+                                                <div class="thumbnail">
+                                                    <a href="#">
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_03.jpg" alt="">
+                                                        </div>
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_03b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <ul>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Brown Yoox Boots</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$448.00</span>
+                                                        <span class="current">$316.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="list">
+                                            <div class="product-thumb">
+                                                <span class="lable">15% off</span>
+                                                <div class="thumbnail">
+                                                    <a href="#">
+                                                        <div class="image hover-image">
+                                                            <img src="./images/assets/product_07.jpg" alt="">
+                                                        </div>
+                                                        <div class="image">
+                                                            <img src="./images/assets/product_07b.jpg" alt="">
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                                <div class="icons-act">
+                                                    <ul>
+                                                        <li><a href="#"><i class='bx bx-heart'></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-shuffle' ></i></a></li>
+                                                        <li><a href="#"><i class='bx bx-cart'></i></a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-info">
+                                                    <h2><a href="#">Brown Yoox Boots</a></h2>
+                                                    <div class="price">
+                                                        <span class="before">$448.00</span>
+                                                        <span class="current">$316.00</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- uniform -->
+            <div class="uniform">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="collection owl-carousel">
+                            <div class="img-hover-effect">
+                                <a href="#0" class="img-block"><img src="./images/assets/collection2.jpg" alt=""></a>
+                                <div class="content-block">
+                                    <h2>Infinitely Shoppable</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <a href="#0" class="shopnow">Shop now</a>
+                                </div>
+                            </div>
+                            <div class="img-hover-effect reverse">
+                                <a href="#0" class="img-block"><img src="./images/assets/collection1.jpg" alt=""></a>
+                                <div class="content-block">
+                                    <h2>Trendy Shopping</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <a href="#0" class="shopnow">Shop now</a>
+                                </div>
+                            </div>
+                            <div class="img-hover-effect">
+                                <a href="#0" class="img-block"><img src="./images/assets/collection3.jpg" alt=""></a>
+                                <div class="content-block">
+                                    <h2>Hurry up!</h2>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                                    <a href="#0" class="shopnow">Shop now</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- blogs  -->
+            <div class="blogs">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="articles-blogs">
+                            <div class="heading">
+                                <h2 class="title">latest blogs & updates</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ipsa earum.</p>
+                            </div>
+                            <div class="article_image owl-carousel">
+                                <div class="blogs-list">
+                                    <div class="article-card">
+                                        <a href="#0"><img src="./images/assets/blogs.jpg" alt=""></a>
+                                    </div>
+                                    <div class="articles-desc">
+                                        <div class="articles-action">
+                                            <a href="#0" class="articles-name">Welcome to our store</a>
+                                            <div class="articles-intro">Mon, Dec 05, 2016</div>
+                                            <div class="readmore">Read More</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blogs-list">
+                                    <div class="article-card">
+                                        <a href="#0"><img src="./images/assets/blogs2.jpg" alt=""></a>
+                                    </div>
+                                    <div class="articles-desc">
+                                        <div class="articles-action">
+                                            <a href="#0" class="articles-name">Welcome to our store</a>
+                                            <div class="articles-intro">Mon, Dec 05, 2016</div>
+                                            <div class="readmore">Read More</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blogs-list">
+                                    <div class="article-card">
+                                        <a href="#0"><img src="./images/assets/blogs3.jpg" alt=""></a>
+                                    </div>
+                                    <div class="articles-desc">
+                                        <div class="articles-action">
+                                            <a href="#0" class="articles-name">Welcome to our store</a>
+                                            <div class="articles-intro">Mon, Dec 05, 2016</div>
+                                            <div class="readmore">Read More</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="blogs-list">
+                                    <div class="article-card">
+                                        <a href="#0"><img src="./images/assets/blogs4.jpg" alt=""></a>
+                                    </div>
+                                    <div class="articles-desc">
+                                        <div class="articles-action">
+                                            <a href="#0" class="articles-name">Welcome to our store</a>
+                                            <div class="articles-intro">Mon, Dec 05, 2016</div>
+                                            <div class="readmore">Read More</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery">
+                <div class="container">
+                    <div class="wrap">
+                        <div class="heading">
+                            <div class="title">FOLLOW US ON INSTAGRAM</div>
+                        </div>
+                        <div class="gallery-list owl-carousel">
+                            <div class="list-item">
+                                <a href="#0"><img src="./images/assets/ins1.jpg" alt=""></a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#0"><img src="./images/assets/ins2.jpg" alt=""></a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#0"><img src="./images/assets/ins3.jpg" alt=""></a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#0"><img src="./images/assets/ins4.jpg" alt=""></a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#0"><img src="./images/assets/ins5.jpg" alt=""></a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#0"><img src="./images/assets/ins6.jpg" alt=""></a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#0"><img src="./images/assets/ins7.jpg" alt=""></a>
+                            </div>
+                            <div class="list-item">
+                                <a href="#0"><img src="./images/assets/ins8.jpg" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="wrap">
+                    <div class="footer-top">
+                        <div class="footer-col-left-7">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <h3 class="footer-title">SHOP</h3>
+                                    <ul class="menu-footer">
+                                        <li><a href="">New In</a></li>
+                                        <li><a href="">Women</a></li>
+                                        <li><a href="">Men</a></li>
+                                        <li><a href="">Shoes</a></li>
+                                        <li><a href="">Bags & Accessories</a></li>
+                                        <li><a href="">Top Brands</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="footer-title">CUSTOMER SERVICE </h3>
+                                    <ul class="menu-footer">
+                                        <li><a href="">Store Locations</a></li>
+                                        <li><a href="">Consultant</a></li>
+                                        <li><a href="">Bulk Editor</a></li>
+                                        <li><a href="">Contact Us</a></li>
+                                        <li><a href="">About</a></li>
+                                        <li><a href="">Top Brands</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="footer-title">INFORMATION</h3>
+                                    <ul class="menu-footer">
+                                        <li><a href="">About</a></li>
+                                        <li><a href="">Customer Service</a></li>
+                                        <li><a href="">Reward Program</a></li>
+                                        <li><a href="">Shipping & Returns</a></li>
+                                        <li><a href="">Privacy Policy</a></li>
+                                        <li><a href="">Bulk Editor</a></li>
+                                        <li><a href="">Blog</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-3">
+                                    <h3 class="footer-title">PAGES</h3>
+                                    <ul class="menu-footer">
+                                        <li><a href="">Search Terms</a></li>
+                                        <li><a href="">Advanced Search</a></li>
+                                        <li><a href="">Orders and Returns</a></li>
+                                        <li><a href="">Contact Us</a></li>
+                                        <li><a href="">Theme FAQs</a></li>
+                                        <li><a href="">Consultant</a></li>
+                                        <li><a href="">Store Locations</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-col-right-5">
+                            <div class="row">
+                                <div class="footer-social">
+                                    <h3 class="footer-title">STAY CONNECTED</h3>
+                                    <ul>
+                                        <li><a href=""><i class='bx bxl-facebook'></i></a></li>
+                                        <li><a href=""><i class='bx bxl-twitter'></i></a></li>
+                                        <li><a href=""><i class='bx bxl-linkedin'></i></a></li>
+                                        <li><a href=""><i class='bx bxl-instagram'></i></a></li>
+                                        <li><a href=""><i class='bx bxl-reddit'></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="footer-newsletter">
+                                    <h3 class="footer-title">Stay In Touch</h3>
+                                    <div class="email">
+                                        <input type="email" value="" placeholder="Enter your email address">
+                                        <a href="">submit</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2020 Ella Demo. Ecommerce Software by Shopify.</span>
+            </div>
+        </footer>
+        <!-- mobile-menu -->
+        <div class="mobile">
+            <ul class="navlist-mb">
+                <li><a href="#" id="active">home</a></li>
+                <li><a href="#">shop</a></li>
+                <li><a href="#">pages</a></li>
+                <li><a href="#">sale</a></li>
+                <li><a href="#">blogs</a></li>
+                <li><a href="#">buy theme!</a></li>
+            </ul>
+            <div class="enter">
+                <div>
+                    <span>enter</span>
+                    <a href="" class="btn-primary">login</a>
+                    <a href="" class="btn-light">signup</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<!-- script  -->
+<script src="js/script.js"></script>
+<script src="js/slide.js"></script>
+<!-- slick -->
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</body>
+</html>

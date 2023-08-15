@@ -1,0 +1,22 @@
+.gallery{
+    padding-top: 30px;
+    padding-bottom: 60px;
+}
+.gallery .heading{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.gallery a img{
+    height: 100%;
+    object-fit: cover;
+    transition: all .75s cubic-bezier(0,0,.2,1);
+}
+.gallery .list-item{
+    overflow: hidden;
+}
+.gallery a:hover img{
+    transform: scale(1.2);
+}

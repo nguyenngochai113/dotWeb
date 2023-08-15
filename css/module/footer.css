@@ -1,0 +1,122 @@
+.footer{
+    background-color: #f6f6f8;
+    padding-top: 70px;
+    padding-bottom: 15px;
+}
+.footer .footer-top{
+    border-bottom: 1px solid var(--color-hover);
+    padding-bottom: 50px;
+
+}
+.footer .footer-top{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.footer-col-left-7{
+    flex-basis: 60%;
+}
+.footer-col-left-7 .row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.footer-col-left-7 .footer-title,
+.footer-col-right-5 .footer-title{
+    font-size: 14px;
+    color: var(--black);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.footer-col-left-7 ul li{
+    margin: 7px 0;
+}
+.footer-col-left-7 ul li a{
+    font-size: 14px;
+    color: #8e8e8e;
+    margin: 100px 0;
+}
+.footer-col-right-5{
+    order: 1;
+}
+.footer-social ul{
+    display: flex;
+}
+.footer-social ul li:nth-child(1){
+    margin-left: 0;
+}
+.footer-social ul li{
+    margin: 0 5px; 
+}
+.footer-social i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: var(--black);
+    transition: .3s ease;
+}
+.footer-social i:hover{
+    background-color: var(--primary);
+    color: var(--white);
+}
+.footer-social{
+    margin-bottom: 60px;
+}
+.footer-newsletter .email input{
+    padding: 10px 12px;
+    width: 220px;
+    background-color: transparent;
+    border:1px solid #3b3b3b;
+}
+.footer-newsletter .email a{
+    padding: 8px 20px;
+    font-size: 15px;
+    text-transform: uppercase;
+    background-color: #3b3b3b;
+    color: var(--white);
+    transition: .3s ease;
+    font-weight: 500;
+}
+.footer-newsletter .email a:hover{
+    background-color: var(--primary);
+}
+.footer-bottom span{
+    color: #969696;;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    font-size: 14px;
+    justify-content: center;
+}
+@media (max-width: 991px){
+    .footer .footer-top{
+        flex-direction: column;
+    }
+}
+@media (max-width: 767px){
+    .footer-col-left-7 .col-md-3{
+        flex-basis: 50%;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 480px){
+    .footer-newsletter .email a {
+        padding: 8px 20px;
+    }
+}
+@media (max-width: 320px){
+    .footer-newsletter .email input {
+        width: 160px;
+    }
+    .footer-bottom span {
+        font-size: 10px;
+    }
+
+}

@@ -1,0 +1,101 @@
+.blogs .articles-blogs{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 0;
+}
+.blogs .heading{
+    width: 30%;  
+    padding: 0 7px;
+}
+.blogs  .heading .title{
+    font-size: 28px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin-bottom: 10px;
+}
+.blogs  .heading p{
+    font-size: 12px;
+    color: var(--color-hover);
+}
+.blogs .article_image{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.blogs .article_image .blogs-list{
+    width: 100%;
+}
+.blogs .blogs-list{
+    position: relative;
+    cursor: pointer;
+}
+.blogs .blogs-list .articles-desc{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    right: 15px;
+    bottom: 15px;
+    transition: .5s ease;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blogs .blogs-list:hover .articles-desc{
+    opacity: 1;
+    visibility: visible;
+}
+.blogs-list .article-card{
+    opacity: 1;
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    visibility: visible;
+}
+
+.blogs .blogs-list .articles-name{
+    font-size: 18px;
+    font-weight: 500;
+}
+.blogs .blogs-list .articles-intro{
+    font-size: 15px;
+    margin-top: 10px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.blogs .blogs-list .readmore{
+    font-size: 22px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.article_image .owl-nav,
+.gallery .owl-nav{
+    opacity: 0;
+    transition: .5s ease-in-out;
+}
+.article_image:hover .owl-nav,
+.gallery .gallery-list:hover .owl-nav{
+    opacity: 1;
+
+}
+
+@media (max-width: 767px){
+    .blogs .articles-blogs{
+        display: block;
+    }
+    .blogs .heading{
+        width: 100%; 
+        text-align: center;
+        margin-bottom: 30px; 
+    }
+    .blogs .heading p{
+        display: none;
+    }
+    .blogs .article_image{
+        width: 100%;
+    }
+}

@@ -1,0 +1,91 @@
+.bycart .wrap .heading{
+    justify-content: center;
+    display: flex;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.bycart .wrap .heading .grey-color{
+    font-size: 35px;
+    opacity: .6;
+    font-weight: 500;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.opt-trigger span{
+    font-size: 50px;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+.opt-trigger i{
+    font-size: 30px;
+    cursor: pointer;
+}
+.bycart .wrap{
+    position: relative;
+}
+.bycart .wrap ul{
+    position: absolute;
+    text-transform: capitalize;
+    top: 70px;
+    right: 10px;
+    background-color: var(--white);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+    display: none;
+    transition: .5s ease;
+    z-index: 99;
+}
+.bycart .wrap ul.show{
+    display: block;
+}
+.bycart .wrap ul li a{
+    background-color: var(--white);
+    width: 100%;
+    display: block;
+    padding: 5px 30px;
+    transition: .3s ease;
+}
+.bycart .wrap ul li a:hover,
+.bycart .wrap ul li.active a{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.bycart .product {
+    margin: 0 -13px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.bycart .product .list{
+    flex-basis: 25%;
+    padding: 0 13px;
+}
+.bycart .product .list img{
+    width: 100%;
+}
+.bycart .tabbed .list{
+    margin-bottom: 50px;
+}
+.sort-data{
+    display: none;
+    transition: .3s ease;
+    margin-top: -10px;
+}
+.sort-data.active{
+    display: block;
+}
+
+@media (max-width: 767px){
+    .bycart .product .list{
+        flex-basis: calc(100% / 3);
+    }
+ }
+
+ @media (max-width: 575px){
+    .bycart .product .list{
+        flex-basis: 50%;
+    }
+ }
+

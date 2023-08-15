@@ -1,0 +1,68 @@
+.uniform{
+    width: 100%;
+}
+.uniform .collection .img-hover-effect{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -30px;
+}
+.uniform .collection .img-hover-effect.reverse{
+    flex-direction: row-reverse;
+
+}
+.uniform .collection .reverse .content-block{
+    padding-left: 70px;
+}
+.uniform .collection .img-block,
+.uniform .collection .content-block{
+    width: 50%;
+    padding: 20px 30px;
+    
+}
+.uniform .content-block h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    letter-spacing: 3px;
+}
+.uniform .content-block p{
+    font-size: 12px;
+    margin-bottom: 15px;
+    color: var(--color-hover);
+}
+.shopnow{
+    padding: 7px 15px;
+    border: 1px solid var(--black);
+    transition: .3s ease-in;
+    text-transform: capitalize;
+    font-size: 15px;
+    font-weight: 600;
+}
+.shopnow:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+@media (max-width: 991px){
+    .uniform .collection .img-hover-effect{
+        margin: 0 -20px;
+    }
+    .uniform .collection .img-block,
+    .uniform .collection .content-block{
+        padding: 0 20px;
+    }
+
+}
+@media (max-width: 767px){
+    .uniform .collection .img-hover-effect{
+        display: block;
+    }
+    .uniform .collection .img-block,
+    .uniform .collection .content-block{
+    width: 100%;
+    padding: 20px 60px;
+    }
+
+}
